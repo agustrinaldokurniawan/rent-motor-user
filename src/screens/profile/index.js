@@ -1,28 +1,19 @@
-import React, { useEffect } from 'react'
-import { View } from "react-native";
+import React, { useContext, useEffect } from "react";
+import { StyleSheet, View } from "react-native";
 import InterText from "../../components/typography/inter-text";
-import MainButton from '../../components/button/main-button';
-import UseSecureStore from '../../utils/secure-store';
+import MainButton from "../../components/button/main-button";
+import { AuthContext } from "../../context/authContext";
+import CallToActionLogin from "../../components/call-to-action";
 
 export default function ProfileScreen(props) {
-  const { removeValue, getValue } = UseSecureStore()
+  const [_, state] = useContext(AuthContext);
 
+  const onLogout = async () => {};
 
-  useEffect(() => {
-    checkUser()
-  }, [])
-
-  const checkUser = async () => {
-    const user = await getValue('user')
-    console.log({ user })
-    if (!user) {
-      navigation.navigate('Home')
-    }
+  if (!state?.user) {
+    return <CallToActionLogin {...props} />;
   }
 
-  const onLogout = async () => {
-    await removeValue('user')
-  }
   return (
     <View>
       <InterText>Profile</InterText>
@@ -30,5 +21,7 @@ export default function ProfileScreen(props) {
         <InterText>Logout</InterText>
       </MainButton>
     </View>
-  )
+  );
 }
+
+const style = StyleSheet.create({});
