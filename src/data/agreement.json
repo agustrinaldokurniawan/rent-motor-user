@@ -1,0 +1,36 @@
+[
+  {
+    "Pendaftaran": [
+      "Peminjam harus berusia minimal 18 tahun",
+      "Peminjam harus memiliki SIM C yang masih berlaku",
+      "Peminjam wajib menyediakan dokumen identitas yang sah (KTP/SIM) dan dokumen lain yang mungkin diperlukan",
+      "Peminjam harus melengkapi formulir pendaftaran dengan informasi yang akurat dan lengkap"
+    ],
+    "Penyewaan Motor": [
+      "Peminjam dapat menyewa motor dengan durasi harian atau bulanan sesuai kebutuhan",
+      "Peminjam harus memilih motor yang tersedia dan melakukan reservasi melalui platform online kami",
+      "Peminjam harus mengambil dan mengembalikan motor sesuai waktu yang telah ditentukan",
+      "Peminjam bertanggung jawab penuh atas keamanan dan kondisi motor selama masa penyewaan",
+      "Peminjam dilarang menggunakan motor untuk kegiatan ilegal atau melanggar hukum"
+    ],
+    "Pembatalan dan Pengembalian": [
+      "Peminjam dapat membatalkan reservasi dengan memberikan pemberitahuan sebelum waktu penyewaan yang telah ditentukan",
+      "Peminjam akan menerima pengembalian biaya sewa sesuai kebijakan pembatalan yang berlaku",
+      "Peminjam harus mengembalikan motor dalam kondisi yang sama seperti saat disewa, kecuali adanya kerusakan yang terjadi selama penggunaan yang wajar"
+    ],
+    "Tanggung Jawab dan Kerugian": [
+      "Peminjam bertanggung jawab atas segala kerugian atau kerusakan yang dialami oleh motor selama masa penyewaan",
+      "Peminjam bertanggung jawab atas segala tuntutan hukum atau ganti rugi yang timbul akibat penggunaan motor"
+    ],
+    "Keamanan dan Perlindungan Data": [
+      "Kami akan menjaga kerahasiaan dan keamanan data pribadi peminjam",
+      "Peminjam setuju bahwa kami dapat menggunakan data pribadi mereka sesuai dengan kebijakan privasi yang berlaku"
+    ],
+    "Penghentian Layanan": [
+      "Kami berhak untuk menghentikan layanan penyewaan motor online jika peminjam melanggar syarat dan ketentuan yang telah ditetapkan"
+    ],
+    "Perhatian": [
+      "Harap dicatat bahwa syarat dan ketentuan ini dapat berubah sesuai kebijakan kami. Dengan menggunakan layanan peminjaman motor online kami, Anda dianggap telah membaca, memahami, dan menyetujui syarat dan ketentuan yang tercantum di atas"
+    ]
+  }
+]

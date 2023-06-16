@@ -5,6 +5,7 @@ import MainButton from "../../components/button/main-button";
 import { AuthContext } from "../../context/authContext";
 import useMotorsApi from "../../api/useMotorsApi";
 import ListMotorComponent from "../../components/motors/list";
+import LoadingLottie from "../../lottie/loading";
 
 export default function HomeScreen({ navigation }) {
   const [_, state] = useContext(AuthContext);
@@ -13,6 +14,10 @@ export default function HomeScreen({ navigation }) {
   const goLogin = async () => {
     navigation.navigate("Login");
   };
+
+  if (listMotor?.isLoading) {
+    return <LoadingLottie />
+  }
 
   return (
     <View style={style.container}>

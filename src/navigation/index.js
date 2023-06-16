@@ -9,6 +9,7 @@ import HomeScreen from "../screens/home";
 import { AuthContext } from "../context/authContext";
 import MainTabs from "./main-tab";
 import DetailMotor from "../screens/home/detail";
+import CreateOrder from "../screens/orders/create";
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,7 @@ export default function Navigation() {
         <Stack.Screen name="DetailMotor" component={DetailMotor} />
         <Stack.Screen name="Signup" component={SignupScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="CreateOrder" component={CreateOrder} />
       </Stack.Navigator>
     </NavigationContainer>
   );

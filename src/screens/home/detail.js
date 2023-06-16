@@ -3,6 +3,7 @@ import { View, Image, StyleSheet } from "react-native";
 import InterText from "../../components/typography/inter-text";
 import { fetchImageFromFirebase } from "../../utils/fetchImageFromFirebase";
 import { transformPrice } from "../../utils/idrPrice";
+import MainButton from "../../components/button/main-button";
 
 export default function DetailMotor({ route, navigation }) {
   const { motor } = route.params;
@@ -38,6 +39,12 @@ export default function DetailMotor({ route, navigation }) {
     });
   };
 
+  const goCreateOrder = () => {
+    navigation.navigate('CreateOrder', {
+      motor
+    })
+  }
+
   return (
     <View>
       <View style={styles.mainView}>
@@ -53,6 +60,9 @@ export default function DetailMotor({ route, navigation }) {
             <InterText>Merk: {motor.production}</InterText>
           </View>
         </View>
+        <MainButton onPress={goCreateOrder}>
+          <InterText>Rental Sekarang</InterText>
+        </MainButton>
         <View style={styles.bottomView}>
           <InterText style={styles.priceTitle} fontSize={20}>
             Harga
